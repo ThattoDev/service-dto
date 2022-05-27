@@ -20,7 +20,7 @@ public class UsuarioInserirDTO {
 		this.usuarioPerfils = usuarioPerfils;
 	}
 	public UsuarioInserirDTO() {
-		// TODO Auto-generated constructor stub
+	
 	}
 	public UsuarioInserirDTO(Usuario usuario) {
 		this.nome = usuario.getNome();

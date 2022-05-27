@@ -1,12 +1,9 @@
 package br.com.senai.model;
 
 import java.io.Serializable;
-
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-
-import org.hibernate.annotations.ManyToAny;
 
 @Embeddable
 public class UsuarioPerfilPK implements Serializable {
@@ -15,13 +12,13 @@ public class UsuarioPerfilPK implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	@ManyToOne
-	@JoinColumn(name="id_usuario")
+	@JoinColumn(name = "id_usuario")
 	private Usuario usuario;
-	
+
 	@ManyToOne
-	@JoinColumn(name= "id_perfil")
+	@JoinColumn(name = "id_perfil")
 	private Perfil perfil;
 
 	public Usuario getUsuario() {
@@ -39,6 +36,5 @@ public class UsuarioPerfilPK implements Serializable {
 	public void setPerfil(Perfil perfil) {
 		this.perfil = perfil;
 	}
-	
-	
+
 }

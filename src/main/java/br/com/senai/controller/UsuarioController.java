@@ -15,7 +15,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.com.senai.dto.UsuarioDTO;
 import br.com.senai.dto.UsuarioInserirDTO;
 import br.com.senai.exception.EmailException;
-import br.com.senai.model.Usuario;
 import br.com.senai.service.UsuarioService;
 
 @RestController
